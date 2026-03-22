@@ -1,0 +1,40 @@
+---
+description: Astro 6 conventions for landing site and Starlight docs (Tailwind v4)
+globs:
+  - "landing/**/*.{astro,mjs,ts,tsx,md,mdx}"
+  - "docs/**/*.{astro,mjs,ts,tsx,md,mdx}"
+alwaysApply: false
+---
+
+# Astro — `landing/` and `docs/`
+
+## Stack (verify in each package)
+
+- **Astro** `^6.x` — both apps use `type: "module"` and local `astro.config.mjs`.
+- **Tailwind** v4 via `@tailwindcss/vite` in Vite plugins (not legacy `@astrojs/tailwind` unless the project adds it).
+
+## Commands
+
+Run from the app folder (`landing/` or `docs/`): use the **lockfile there** as the source of truth (`bun.lock` → Bun; `package-lock.json` → npm; etc.). There is no monorepo root `package.json` for these apps.
+
+## `landing/` (marketing site)
+
+- **Source of truth**: edit `src/` and `public/` only — **`dist/` is build output** (gitignored). Static files such as `robots.txt` belong in `public/`.
+- **Copy**: all user-facing text in **English** (see `calacacms-documentation-language.mdc`).
+- **Structure**: `src/layouts/Layout.astro` wraps pages; `src/pages/index.astro` is `/`, `src/pages/landing.astro` is `/landing`. Prefer `.astro` for markup; keep client JS small.
+- **Islands**: use `client:visible` or `client:load` only when needed; avoid global scripts.
+- **Imports**: explicit paths, **named exports**; no barrel `index.ts` re-exports (monorepo convention).
+
+## `docs/` (Starlight)
+
+- **Verify**: `bun run check` (`astro check`) then `bun run build` when changing MDX or Astro in this app.
+- **Build output** lives in `docs/dist/` (gitignored); do not edit generated files there.
+- Treat **Starlight** (`@astrojs/starlight`) as the source of truth for navigation, theme, and MDX/Markdown content under its configured content dirs.
+- Respect existing **`astro.config.mjs`** (site URL, `base`, `integrations`, `customCss`, `editLink`).
+- **Content**: technical prose in **English**; align terminology with `agent-context/PROJECT_SSOT.md` when documenting the product.
+
+## Shared patterns
+
+- Prefer **content and layout co-location** per route or feature.
+- Use **semantic HTML** and sensible defaults for accessibility (landmarks, labels, focus).
+- For unfamiliar Astro 6 or Starlight APIs, prefer **Context7 / current docs** over guessing.

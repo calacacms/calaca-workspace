@@ -1,0 +1,22 @@
+# ── Monorepo root (use when this folder is the git root; subprojects may have their own .gitignore)
+
+# Application packages — each has its own GitHub repository; do not commit them in this workspace repo
+/cms/
+/docs/
+/landing/
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+
+# Local AI / editor artifacts (can contain chat history and paths — do not publish)
+.specstory/
+
+# Cursor hook machine state (transcript index, etc.); rules under .cursor/rules stay tracked
+.cursor/hooks/state/
+
+# Local VS Code / Cursor workspace settings (personal paths, UI state)
+.vscode/

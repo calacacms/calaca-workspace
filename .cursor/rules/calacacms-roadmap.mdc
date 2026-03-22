@@ -1,0 +1,18 @@
+---
+description: Roadmap- en wensenbewaking — raadpleeg en update ROADMAP.md en cms-wensen.md bij CMS-planning en na feature-afronding
+alwaysApply: true
+---
+
+# CalacaCMS roadmap-bewaker (agentgedrag)
+
+Wanneer je **nieuwe CMS-features plant**, **prioriteiten afstemt**, **grote refactors** voorstelt, of **een feature als afgerond** beschouwt:
+
+1. **Lees** `ROADMAP.md` (workspace root) — backlog, horizon en status van geplande features.
+2. **Lees** indien nodig `cms-wensen.md` — vooral de implementatiestatus-tabel en de bijbehorende secties.
+3. **Stem voorstellen af** op wat daar staat: vermijd roadmap-items te overslaan als de gebruiker expliciet om “wat nu te bouwen” vraagt; noem relevante roadmap-ID’s (R1, R2, …).
+4. **Na afronding** van werk dat een roadmap-item raakt:
+   - werk de **status** van dat item in `ROADMAP.md` bij (`Idee` → `In progress` → `Gedaan`);
+   - voeg een regel toe aan **Changelog (roadmap)** in `ROADMAP.md`;
+   - werk de **implementatiestatus-tabel** in `cms-wensen.md` bij waar van toepassing.
+
+Als de gebruiker vraagt om een **roadmap-review** of **wat staat er nog open**: geef een beknopt antwoord op basis van `ROADMAP.md` en `cms-wensen.md`, zonder oude aannames te gebruiken als die documenten iets anders zeggen.

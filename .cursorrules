@@ -1,0 +1,20 @@
+# CalacaCMS monorepo — Cursor
+
+## Before substantive work
+
+1. Read **`agent-context/PROJECT_SSOT.md`** (stack, structure, commands, conventions).
+2. Read **`AGENTS.md`** at this root, then **`cms/AGENTS.md`** for authoritative CMS agent rules (PHP, Bun, Vite, Twig, testing, preferences).
+
+## Cursor rules (source of truth for policy)
+
+Detailed, scoped rules live in **`.cursor/rules/`** (`.mdc` files). They cover roadmap and `cms-wensen.md` updates, documentation language (English in `cms/`, `docs/`, `landing/`, `agent-context/`; Dutch allowed at workspace root only), and Astro 6 + Tailwind v4 for `landing/` and `docs/`. Prefer those files over re-stating policy here.
+
+## Layout (short)
+
+- **`cms/`** — CalacaCMS application (run commands from here per `cms/AGENTS.md`).
+- **`landing/`**, **`docs/`** — Astro apps; run commands from each package directory.
+- **`ROADMAP.md`**, **`cms-wensen.md`** — product backlog and wishlist; align CMS feature work and update status when items complete.
+
+## Code and commits
+
+English for code comments, identifiers, and commit messages. Match existing patterns; small focused diffs.

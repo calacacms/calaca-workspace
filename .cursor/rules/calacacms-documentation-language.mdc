@@ -1,0 +1,26 @@
+---
+description: Documentation language — English in cms/, docs/, landing/; Dutch allowed at workspace root only
+alwaysApply: true
+---
+
+# Documentation language (CalacaCMS monorepo)
+
+## English (required)
+
+All **project documentation** under these paths must be **English**:
+
+- `cms/` — including `cms/docs/`, README files, knowledge-base style Markdown, and agent-facing instructions in this tree
+- `docs/` — Starlight documentation site (`src/content/docs/`, etc.)
+- `agent-context/` — knowledge base and SSOT for humans and AI agents (`PROJECT_SSOT.md`, research, plans)
+- `landing/` — README, Astro pages, and **all user-facing marketing copy** (headlines, CTAs, body text)
+
+When you **create or edit** Markdown, README, Astro/markup copy, or similar material in those directories, write in clear **English** — including marketing and product messaging on the landing site.
+
+## Dutch (allowed)
+
+At the **workspace root** only, Markdown such as `ROADMAP.md`, `cms-wensen.md`, and narrative sections in root `AGENTS.md` **may be Dutch** (moedertaal van de maintainer).
+
+## Unchanged
+
+- **Code comments**, **identifiers**, and **commit messages**: **English** everywhere (see `cms/AGENTS.md`).
+- Explanations in chat: follow user language when the user writes in Dutch (`cms/AGENTS.md` — Learned User Preferences).
