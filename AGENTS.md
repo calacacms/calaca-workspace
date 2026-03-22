@@ -1,6 +1,6 @@
 # AGENTS.md (workspace root)
 
-**Workspace GitHub repository:** `calacacms-workspace` (zie [`README.md`](README.md) § Git).
+**Workspace GitHub repository:** [`calacacms/calaca-workspace`](https://github.com/calacacms/calaca-workspace) (zie [`README.md`](README.md) § Git).
 
 **Authoritative agent instructions for the CMS live in [`cms/AGENTS.md`](cms/AGENTS.md)** — stack rules, commands, architecture, Context7 hints, and the **Learned User Preferences** / **Learned Workspace Facts** sections.
 

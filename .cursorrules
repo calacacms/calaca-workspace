@@ -1,6 +1,6 @@
 # CalacaCMS workspace — Cursor
 
-This folder is the **`calacacms-workspace`** Git repository (roadmap, `agent-context/`, editor rules). Application code lives in separate clones: `cms/`, `docs/`, `landing/`.
+This folder is the **`calaca-workspace`** Git repository on GitHub (`calacacms/calaca-workspace`): roadmap, `agent-context/`, editor rules. Application code lives in separate clones: `cms/`, `docs/`, `landing/`.
 
 ## Before substantive work
 

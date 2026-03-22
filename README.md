@@ -1,6 +1,6 @@
 # CalacaCMS (workspace)
 
-**GitHub (workspace-root):** repository **`calacacms-workspace`** — bevat o.a. roadmap, agent-context en Cursor-regels; **niet** `cms/`, `docs/` of `landing/` (eigen repos).
+**GitHub (workspace-root):** repository **`calaca-workspace`** — [github.com/calacacms/calaca-workspace](https://github.com/calacacms/calaca-workspace); bevat o.a. roadmap, agent-context en Cursor-regels; **niet** `cms/`, `docs/` of `landing/` (eigen repos).
 
 Deze map is de **workspace** rond **CalacaCMS**: een site-first PHP-CMS met aparte projecten voor documentatie en marketing. Elk onderdeel heeft eigen dependencies en scripts; start en bouw ze vanuit de betreffelde subdirectory.
 
@@ -55,16 +55,16 @@ Gebruik overal **Bun** zoals in de package-scripts; Node-versie: zie `engines` i
 
 ## Git: workspace-root op GitHub (zonder cms/docs/landing)
 
-Deze **bovenliggende map** wordt op GitHub de repository **`calacacms-workspace`**. Daarin horen gedeelde zaken: `AGENTS.md`, `ROADMAP.md`, `cms-wensen.md`, `agent-context/`, `.cursor/`, enzovoort.
+Deze **bovenliggende map** wordt op GitHub de repository **`calaca-workspace`**. Daarin horen gedeelde zaken: `AGENTS.md`, `ROADMAP.md`, `cms-wensen.md`, `agent-context/`, `.cursor/`, enzovoort.
 
 **`cms/`**, **`docs/`** en **`landing/`** horen **niet** in die root-repo: ze staan in [`.gitignore`](.gitignore) en krijgen elk een **aparte** GitHub-repository. Lokaal kun je ze naast elkaar houden (zoals nu) of als losse clones in die mappen plaatsen.
 
 ### Lokale checkout (volledige workspace)
 
-1. Clone **`calacacms-workspace`** naar bijvoorbeeld `calacacms/`:
+1. Clone **`calaca-workspace`** naar bijvoorbeeld `calacacms/`:
 
 ```bash
-git clone https://github.com/calacacms/calacacms-workspace.git calacacms
+git clone https://github.com/calacacms/calaca-workspace.git calacacms
 cd calacacms
 ```
 
