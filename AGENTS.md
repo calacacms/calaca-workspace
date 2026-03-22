@@ -1,5 +1,7 @@
 # AGENTS.md (workspace root)
 
+**Workspace GitHub repository:** `calacacms-workspace` (zie [`README.md`](README.md) § Git).
+
 **Authoritative agent instructions for the CMS live in [`cms/AGENTS.md`](cms/AGENTS.md)** — stack rules, commands, architecture, Context7 hints, and the **Learned User Preferences** / **Learned Workspace Facts** sections.
 
 Use this root file only as the entry point Cursor or other tools expect at the monorepo root; edit behavior and project memory in `cms/AGENTS.md`.

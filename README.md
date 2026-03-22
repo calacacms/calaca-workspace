@@ -1,5 +1,7 @@
 # CalacaCMS (workspace)
 
+**GitHub (workspace-root):** repository **`calacacms-workspace`** — bevat o.a. roadmap, agent-context en Cursor-regels; **niet** `cms/`, `docs/` of `landing/` (eigen repos).
+
 Deze map is de **workspace** rond **CalacaCMS**: een site-first PHP-CMS met aparte projecten voor documentatie en marketing. Elk onderdeel heeft eigen dependencies en scripts; start en bouw ze vanuit de betreffelde subdirectory.
 
 ---
@@ -53,20 +55,27 @@ Gebruik overal **Bun** zoals in de package-scripts; Node-versie: zie `engines` i
 
 ## Git: workspace-root op GitHub (zonder cms/docs/landing)
 
-Deze **bovenliggende map** (`calacacms/`) kan een **eigen repository** op GitHub zijn voor gedeelde dingen: `AGENTS.md`, `ROADMAP.md`, `cms-wensen.md`, `agent-context/`, `.cursor/`, enzovoort.
+Deze **bovenliggende map** wordt op GitHub de repository **`calacacms-workspace`**. Daarin horen gedeelde zaken: `AGENTS.md`, `ROADMAP.md`, `cms-wensen.md`, `agent-context/`, `.cursor/`, enzovoort.
 
 **`cms/`**, **`docs/`** en **`landing/`** horen **niet** in die root-repo: ze staan in [`.gitignore`](.gitignore) en krijgen elk een **aparte** GitHub-repository. Lokaal kun je ze naast elkaar houden (zoals nu) of als losse clones in die mappen plaatsen.
 
 ### Lokale checkout (volledige workspace)
 
-1. Clone de **workspace-root** repo naar bijvoorbeeld `calacacms/`.
+1. Clone **`calacacms-workspace`** naar bijvoorbeeld `calacacms/`:
+
+```bash
+git clone https://github.com/calacacms/calacacms-workspace.git calacacms
+cd calacacms
+```
+
 2. Clone de drie app-repositories **in** de verwachte mappen (namen moeten `cms`, `docs` en `landing` blijven voor de paden in `AGENTS.md` en agent-regels):
 
 ```bash
-cd calacacms
-git clone <jouw-cms-repo-url>    cms
-git clone <jouw-docs-repo-url>   docs
-git clone <jouw-landing-repo-url> landing
+git clone https://github.com/calacacms/cms.git cms
+git clone https://github.com/calacacms/docs.git docs
+git clone https://github.com/calacacms/landing.git landing
 ```
+
+**CMS-repo:** [github.com/calacacms/cms](https://github.com/calacacms/cms) — SSH (standaard): `git@github.com:calacacms/cms.git`. Als je lokaal een **SSH-hostalias** gebruikt (bijv. `github.com-calacacms`), mag `origin` die host blijven gebruiken zolang het pad `calacacms/cms.git` hetzelfde blijft.
 
 Als je al één grote map hebt met alles erin: maak in `cms/`, `docs/` en `landing/` aparte repos (`git init` of `git clone`), en gebruik voor de bovenliggende map alleen de root-repo — dan blijven de app-mappen uit de root-remote door `.gitignore`.

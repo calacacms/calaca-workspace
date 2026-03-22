@@ -17,6 +17,3 @@ ehthumbs.db
 
 # Cursor hook machine state (transcript index, etc.); rules under .cursor/rules stay tracked
 .cursor/hooks/state/
-
-# Local VS Code / Cursor workspace settings (personal paths, UI state)
-.vscode/

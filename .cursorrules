@@ -1,4 +1,6 @@
-# CalacaCMS monorepo — Cursor
+# CalacaCMS workspace — Cursor
+
+This folder is the **`calacacms-workspace`** Git repository (roadmap, `agent-context/`, editor rules). Application code lives in separate clones: `cms/`, `docs/`, `landing/`.
 
 ## Before substantive work
 
