@@ -1,0 +1,24 @@
+{
+  "folders": [
+    {
+      "name": "calaca-workspace",
+      "path": "."
+    },
+    {
+      "name": "cms",
+      "path": "cms"
+    },
+    {
+      "name": "docs",
+      "path": "docs"
+    },
+    {
+      "name": "landing",
+      "path": "landing"
+    }
+  ],
+  "settings": {
+    "git.autoRepositoryDetection": "subFolders",
+    "git.repositoryScanMaxDepth": -1
+  }
+}
